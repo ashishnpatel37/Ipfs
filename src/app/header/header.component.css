@@ -1,0 +1,22 @@
+/* div.container {
+    width: 100%;
+    border: 1px solid gray;
+}
+
+header, footer {
+    padding: 1em;
+    color: white;
+    background-color: lightblue;
+    clear: left;
+    text-align: center;   
+}
+
+a{
+    text-decoration: coral;
+    color: blueviolet;
+} */
+
+strong {
+    font-weight: bolder;
+    font-size: x-large;
+}

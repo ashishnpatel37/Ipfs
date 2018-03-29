@@ -1,0 +1,17 @@
+<div>
+  <form id='captureMedia' (ngSubmit)="handleSubmit($event)">
+    <input type='file' (change)="captureFile($event)" />
+  </form>
+  <br>
+  <div class="content"> Hash for selected file: {{ipfsId}} </div>
+  <br>
+  <div>
+    <a href="https://ipfs.io/ipfs/{{ipfsId}}">{{ipfsId}}
+    </a>
+  </div>
+  <!-- <button type="button" (click)="display($event)">Fetch File from IPFS</button> -->
+
+  <textarea id="data" disabled rows="10" cols="80">
+    data fetched from ipfs :
+    </textarea>
+</div>
