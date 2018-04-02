@@ -23,6 +23,7 @@ export class FileUploadComponent implements OnInit {
     //   added_file_hash: null
     // }
    // this.ipfsApi = ipfsApi('localhost', '5001')
+   //this.ipfsApi = ipfsApi;
     // bind methods
     this.captureFile = this.captureFile.bind(this);
     this.saveToIpfs = this.saveToIpfs.bind(this);
@@ -50,7 +51,7 @@ export class FileUploadComponent implements OnInit {
   saveToIpfs(reader) {
     const buffer = Buffer.from(reader.result)
     console.log(buffer)
-    this.ipfsApi.add(buffer, { progress: (prog) => console.log(`received: ${prog}`) })
+    ipfsApi.add(buffer, { progress: (prog) => console.log(`received: ${prog}`) })
       .then((response) => {
         console.log(response)
         this.ipfsId = response[0].hash
@@ -65,7 +66,7 @@ export class FileUploadComponent implements OnInit {
   display(ipfsId) {
 
     console.log("display function called" + ipfsId)
-    this.ipfsApi.cat(ipfsId, function (err, res) {
+    ipfsApi.cat(ipfsId, function (err, res) {
       if (err || !res) {
         return console.error('ipfs cat error', err, res)
       }
