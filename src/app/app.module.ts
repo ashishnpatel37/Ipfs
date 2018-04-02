@@ -7,15 +7,14 @@ import {MatButtonModule, MatMenuModule} from '@angular/material';
 import { AppComponent } from './app.component';
 import { FileUploadComponent } from './file-upload/file-upload.component';
 import { NestDropDownComponent } from './nest-drop-down/nest-drop-down.component';
-import { HeaderComponent } from './header/header.component';
+
 
 
 @NgModule({
   declarations: [
     AppComponent,
     FileUploadComponent,
-    NestDropDownComponent,
-    HeaderComponent
+    NestDropDownComponent
   ],
   imports: [
     BrowserModule,
