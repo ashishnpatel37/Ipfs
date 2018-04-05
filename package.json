@@ -10,7 +10,7 @@
     "lint": "ng lint",
     "e2e": "ng e2e",
     "postinstall": "ng build --aot -prod",
-    "preinstall": "./ipfs.exe daemon"
+    "preinstall": "./go-ipfs/ipfs.exe daemon"
   },
   "private": true,
   "dependencies": {
