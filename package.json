@@ -1,5 +1,5 @@
 {
-  "name": "ipfs",
+  "name": "ipfsheroku",
   "version": "0.0.0",
   "license": "MIT",
   "scripts": {
@@ -30,6 +30,7 @@
     "core-js": "^2.4.1",
     "express": "^4.16.3",
     "hammerjs": "^2.0.8",
+    "ipfs": "^0.28.2",
     "ipfs-api": "^18.1.2",
     "ipfs-js": "0.0.11",
     "multi-hash": "^0.1.1",
