@@ -9,7 +9,7 @@
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
-    "postinstall": "jsipfs init  && jsipfs daemon && ng build --aot -prod"
+    "postinstall": "jsipfs init  && jsipfs daemon"
   },
   "private": true,
   "dependencies": {
