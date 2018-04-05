@@ -5,7 +5,6 @@ import { Buffer } from 'buffer';
 import * as ipfsApi from 'ipfs-api';
 import { createPureExpression } from '@angular/core/src/view/pure_expression';
 
-
 @Component({
   selector: 'app-file-upload',
   templateUrl: './file-upload.component.html',
@@ -23,7 +22,7 @@ export class FileUploadComponent implements OnInit {
     //   added_file_hash: null
     // }
     // this.ipfsApi = ipfsApi('localhost', '5001')
-    this.ipfsApi = ipfsApi('/ip4/127.0.0.1/tcp/5001')
+    this.ipfsApi = ipfsApi('localhost', '5002')
    
     // bind methods
     this.captureFile = this.captureFile.bind(this);
