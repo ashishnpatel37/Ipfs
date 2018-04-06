@@ -22,7 +22,7 @@ export class FileUploadComponent implements OnInit {
     //   added_file_hash: null
     // }
     // this.ipfsApi = ipfsApi('localhost', '5001')
-    this.ipfsApi = ipfsApi('localhost', '5001')
+    this.ipfsApi = ipfsApi('localhost', '5002')
    
     // bind methods
     this.captureFile = this.captureFile.bind(this);
